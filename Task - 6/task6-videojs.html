@@ -18,7 +18,7 @@
       poster="MY_VIDEO_POSTER.jpg"
       data-setup="{}"
     >
-    <source src="video.mp4" type="video/mp4" />
+    <source src="videos/video.mp4" type="video/mp4" />
     </video>
   
     <script src="https://vjs.zencdn.net/7.20.1/video.min.js"></script>
@@ -28,7 +28,7 @@
         myPlayer.ready(function(){
         this.on("ended", function(){ 
             if(count == 0){
-                myPlayer.src({type: 'video/mp4', src: 'video1.mp4'});
+                myPlayer.src({type: 'video/mp4', src: 'videos/video1.mp4'});
                 myPlayer.play();
                 count+=1;
             }
